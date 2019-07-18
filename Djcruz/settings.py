@@ -27,7 +27,7 @@ SECRET_KEY = '3iyw_!v8m)!34_t_0m(sa%^de=28^=$pfo=q_qfn)#wer0$3e1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ferror18.pythonanywhere.com']
+ALLOWED_HOSTS = ['ferror18.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition

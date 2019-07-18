@@ -12,3 +12,9 @@ def services(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def booking(request):
+    return render(request, 'booking.html')
+
+def bcontrol(request):
+    return render(request, 'bcontrol.html')
