@@ -1,1 +1,1 @@
-
+today = Date()
