@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
   <head>
@@ -12,20 +12,21 @@ f<!DOCTYPE html>
 
 <!--  calendar start -->
 
-
-
-    <table align='center'>
+    {% block body_block %}
+    <div class="jumbotron" align="center">
+    <button type="button" name="button-right" onclick="nextMonth()">right</button>
+    <table id="calendar">
       <thead>
         <th colspan='7' id="a"></th>
       </thead>
       <tr>
-        <td id="b1">Mon</td>
-        <td id="b2">Tue</td>
-        <td id="b3">Wed</td>
-        <td id="b4">Thr</td>
-        <td id="b5">Fri</td>
-        <td id="b6">Sat</td>
-        <td id="b7">Sun</td>
+        <td id="b1">Sun</td>
+        <td id="b2">Mon</td>
+        <td id="b3">Tue</td>
+        <td id="b4">Wed</td>
+        <td id="b5">Thr</td>
+        <td id="b6">Fri</td>
+        <td id="b7">Sat</td>
       </tr>
       <tr>
         <td id="c1"></td>
@@ -82,8 +83,9 @@ f<!DOCTYPE html>
         <td id="h7"></td>
       </tr>
     </table>
-
-
+    <button type="button" name="button-left" onclick="previousMonth()">left</button>
+    </div>
+    {% endblock %}
 
     <!-- calendar end -->
 
