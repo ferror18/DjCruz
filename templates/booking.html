@@ -7,13 +7,11 @@
     <link rel="stylesheet" href='{% static "css\calendar.css" %}'>
   </head>
   <body>
-
-
-
-<!--  calendar start -->
-
     {% block body_block %}
-    <div class="jumbotron" align="center">
+
+    <!--  calendar start -->
+
+    <div class="container" align="center">
     <button type="button" name="button-right" onclick="nextMonth()">right</button>
     <table id="calendar">
       <thead>
@@ -85,12 +83,21 @@
     </table>
     <button type="button" name="button-left" onclick="previousMonth()">left</button>
     </div>
+
+    <!--  calendar end -->
+
+    <!-- form Start -->
+
+    <div class="container">
+      <form enctype="application/x-www-form-urlencoded" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="" value="Request Date">
+      </form>
+    </div>
+
+    <!-- form end -->
     {% endblock %}
-
-    <!-- calendar end -->
-
-
-
     <script type="text/javascript" src='{% static "js\calendar.js" %}'>
 
     </script>
