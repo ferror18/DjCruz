@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 {% load static %}
 <html lang="en" dir="ltr">
   <head>
@@ -12,7 +12,7 @@
     <!--  calendar start -->
 
     <div class="container" align="center">
-    <button type="button" name="button-right" onclick="nextMonth()">right</button>
+    <!-- <button type="button" name="button-right" onclick="nextMonth()">right</button> -->
     <table id="calendar">
       <thead>
         <th colspan='7' id="a"></th>
@@ -81,7 +81,7 @@
         <td id="h7"></td>
       </tr>
     </table>
-    <button type="button" name="button-left" onclick="previousMonth()">left</button>
+    <!-- <button type="button" name="button-left" onclick="previousMonth()">left</button> -->
     </div>
 
     <!--  calendar end -->
