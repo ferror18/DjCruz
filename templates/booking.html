@@ -91,7 +91,7 @@
     <div class="container">
       <form enctype="application/x-www-form-urlencoded" method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form }}
         <input type="submit" name="" value="Request Date">
       </form>
     </div>

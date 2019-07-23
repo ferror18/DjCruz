@@ -21,4 +21,8 @@ def booking(request):
         form = reservationform(request.POST)
         if form.is_valid():
             form.save()
+        else:
+            print('not valid')
+    else:
+        form = reservationform(request.POST)
     return render(request, 'booking.html', {'form': form})
